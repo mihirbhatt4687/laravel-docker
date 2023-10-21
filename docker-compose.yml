@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  laravel-php-apache-environment:
+    build: .
+    image: custom-laravel-php
+    volumes:
+      - ./doc-root:/var/www/html/
+    ports:
+      - 8090:80
